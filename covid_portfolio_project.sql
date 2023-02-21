@@ -107,6 +107,3 @@ and dea.date = vac.date
 WHERE dea.continent IS NOT NULL);
 
 SELECT * FROM PercentPopulationVaccinated
-
-
-
