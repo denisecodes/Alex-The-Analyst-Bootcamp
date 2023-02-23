@@ -144,8 +144,7 @@ FROM housing_data;
 
 -- Unfortunately this did not work for me in MySQL Workbench 
 -- I get error code 1292, Truncated incorrected Double value: 'Y'
--- Tried to google, create a simple test table to solve this but still have no solutions. 
--- Happy for anyone to help me out here! 
+-- Tried to google, created a simple test table to solve this error but nothing worked.
 
 UPDATE housing_data
 SET SoldAsVacant = CASE
@@ -153,6 +152,16 @@ SET SoldAsVacant = CASE
 	WHEN 'N' THEN 'No'
     ELSE SoldAsVacant
 END;
+
+-- As CASE WHEN did not work, I hfound an alternative method using UPDATE TABLE below.
+
+UPDATE housing_data
+SET SoldasVacant = 'Yes'
+WHERE SoldasVacant = 'Y';
+
+UPDATE housing_data
+SET SoldasVacant = 'No'
+WHERE SoldasVacant = 'N';
 
 -- Remove Duplicates
 -- PARTITION BY values that should be unique, where ROW_NUMBER returns the row_num 
