@@ -183,6 +183,25 @@ DELETE
 FROM Row_Num_CTE
 WHERE row_num > 1;
 
+-- ChatGPT suggested the following and it worked
+
+DELETE FROM housing_data
+WHERE UniqueID NOT IN (
+    SELECT UniqueID FROM (
+        SELECT UniqueID,
+        ROW_NUMBER() OVER (
+            PARTITION BY ParcelID,
+                        PropertyAddress,
+                        SalePrice,
+                        SaleDate,
+                        LegalReference
+            ORDER BY UniqueID
+        ) AS row_num
+        FROM housing_data
+    ) subquery
+    WHERE row_num = 1
+);
+
 -- Delete Unused Columns
 
 ALTER TABLE housing_data
@@ -191,4 +210,5 @@ DROP COLUMN TaxDistrict,
 DROP COLUMN PropertyAddress,
 DROP COLUMN SaleDate;
 
+-- Check final data cleaning results
 SELECT * FROM housing_data
