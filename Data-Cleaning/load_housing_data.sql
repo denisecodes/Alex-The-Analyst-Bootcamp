@@ -21,7 +21,7 @@ FullBath SMALLINT,
 HalfBath SMALLINT
 );
 
-LOAD DATA LOCAL INFILE '/Users/denisechan/Documents/Alex The Analyst Bootcamp/Nashville Housing Data for Data Cleaning.csv'
+LOAD DATA LOCAL INFILE '/Users/denisechan/Documents/Alex The Analyst Bootcamp/Data-Cleaning/Nashville Housing Data for Data Cleaning.csv'
 INTO TABLE housing_data
 FIELDS TERMINATED BY ','
 ENCLOSED BY '"'
