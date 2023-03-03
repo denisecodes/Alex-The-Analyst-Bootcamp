@@ -11,7 +11,7 @@ For the Excel Full Project, I created a dashboard on bike sales and you can see 
 
 <img width="978" alt="Screen Shot 2023-03-02 at 13 42 37" src="https://user-images.githubusercontent.com/119052310/222445214-3e37942b-d5d2-4bbd-8e3c-fc2908cff035.png">
 
-##Tableau
+## Tableau
 
 For the Tableau Full Project, I created a dashboard on 2016 Seattle Airbnb data and you can see the output below for reference. I plan to work on using a different dataset to visualise data in Tableau in the future.
 
