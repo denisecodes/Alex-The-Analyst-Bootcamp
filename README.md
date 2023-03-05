@@ -22,3 +22,7 @@ For the Tableau Full Project, I created a dashboard on 2016 Seattle Airbnb data 
 For Power BI, I used [Parallels Desktop](https://www.parallels.com/) to access Windows to download Power BI Desktop to complete the project on my Mac. Parallels Desktop provides a 14 Day Free Trial and I recommend using this to learn Power BI for Mac users. For the Full Project, I created a dashboard to analyse data on Data Professional Survey collected by Alex and below is the output. I plan to make use Power BI again to make my own visualisations and dashboard.
 
 ![Data-Professional-Survey-Final-Project](https://user-images.githubusercontent.com/119052310/222852357-7acba5ed-0264-456e-aef8-e950dd5840ad.png)
+
+## Python
+
+For the Python Data Analyst Projects, I completed both using an IDE that I use personally - PyCharm, instead of Jupyter Notebooks that Alex recommended. I had experience doing webscraping and using APIs to pull data prior to completing the projects through this bootcamp. The projects were a good recap and revision of these skills and I plan to expand my python knowledge on DS related libraries such as pandas, matplotlib, plotly, numpy etc. You can find more python projects I have completed on my repository: [100 Days of Code Python](https://github.dev/denisecodes/100-Days-of-Code-Python).
